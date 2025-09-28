@@ -1,0 +1,71 @@
+/* Estilos Gerais */
+body {
+    background: linear-gradient(#69143a, #880e4f, #ad1457, #d81b60, #ec407a, #f06292);
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Banner */
+.banner {
+    background-image: url('img/Gemini_Generated_Image_vz2qeevz2qeevz2q.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Container do Conteúdo */
+.container {
+    width: 70%; /* 100% - (15% + 15%) = 70% */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    flex-grow: 1; /* Permite que o container se expanda para ocupar o espaço disponível */
+    padding: 0 15%; /* Adiciona as margens laterais de 15% */
+}
+
+/* Conteúdo Principal */
+.main-content {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-content img {
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    margin-top: auto; /* Empurra o rodapé para a parte inferior da página */
+}
