@@ -1,71 +1,130 @@
-/* Estilos Gerais */
-body {
-    background: linear-gradient(#69143a, #880e4f, #ad1457, #d81b60, #ec407a, #f06292);
-    color: #333;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+ body {
 
-/* Banner */
-.banner {
-    background-image: url('img/Gemini_Generated_Image_vz2qeevz2qeevz2q.png');
-    background-size: cover;
-    background-position: center;
+     background: linear-gradient(#69143a, #880e4f, #ad1457, #d81b60, #ec407a, #f06292);
+     color: #333;
+     font-family: 'Arial', sans-serif;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+ }
+
+
+ .banner {
+     background-image: url(img/Gemini_Generated_Image_vz2qeevz2qeevz2q.png);
+     background-size: cover;
+     background-position: center;
+     border-bottom: 5px solid #69143a;
+     width: 100%;
+     height: 18vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+ .banner h1 {
+     font-size: clamp(1.5rem, 5vw, 3rem);
+ }
+
+ .content-wrapper {
+     margin: 20px 15%;
+     flex-grow: 1;
+     padding-bottom: 40px;
+ }
+
+
+ .main-table {
+     width: 100%;
+     border-collapse: collapse;
+     background-color: aliceblue;
+     border-radius: 10px;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+     overflow: hidden;
+ }
+
+
+ .main-content-cell {
+     padding: 20px;
+     text-align: center;
+ }
+
+ .content-block img {
+     border-radius: 10px;
+     max-width: 100%;
+     height: auto;
+     border: 3px solid #d81b60;
+     margin-bottom: 20px;
+     transition: all 0.3s ease;
+ }
+ .content-block img:hover {
+     transform: scale(1.02);
+ }
+
+ .content-block p {
+     text-align: justify;
+     line-height: 1.7;
+     padding: 0 10px;
+ }
+ h1{
+ transition: all 0.3s ease;
+font-family: 'Cormorant Garamond', serif;
+ }
+ h1:hover{
+  transform: scale(1.02);
+ 
+ }
+
+ hr {
+     border: none;
+     height: 2px;
+     background-color: #f06292;
+     margin: 25px 0;
+ }
+
+ h2{
+    background-color: #880e4f;
+    color: aliceblue;
+    padding: 10px;
     border-radius: 10px;
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
+      font-family: 'Merriweather', serif;
+    
+ }
+
+ .rodape {
+     text-align: center;
+     color: white;
+     padding: 20px 15%;
+     background-color: rgba(0, 0, 0, 0.1);
+     margin-top: auto;
+     border-top: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+ .rodape p {
+     margin: 5px 0;
+     font-size: 0.9rem;
+ }
+
+ @media (max-width: 768px) {
+     .content-wrapper {
+         margin: 10px 5%;/
+     }
+ }
+
+ iframe{
+    border: #880e4f solid 8px;
+    border-radius: 10px;
     align-items: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-}
+    transition: all 0.3s ease
+ }
 
-/* Container do Conteúdo */
-.container {
-    width: 70%; /* 100% - (15% + 15%) = 70% */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    flex-grow: 1; /* Permite que o container se expanda para ocupar o espaço disponível */
-    padding: 0 15%; /* Adiciona as margens laterais de 15% */
-}
-
-/* Conteúdo Principal */
-.main-content {
-    background-color: aliceblue;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.main-content img {
-    border-radius: 30px;
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-}
-
-.main-content p {
-    text-align: left;
-    line-height: 1.6;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background-color: #ccc;
-    margin: 20px 0;
-}
-
-/* Rodapé */
-.rodape {
-    text-align: center;
-    color: white;
-    padding: 15px;
-    margin-top: auto; /* Empurra o rodapé para a parte inferior da página */
-}
+ iframe:hover{
+   transform: scale(1.02);
+    
+ }
+ 
+ p{
+font-family: 'Lato', sans-serif;
+ }
